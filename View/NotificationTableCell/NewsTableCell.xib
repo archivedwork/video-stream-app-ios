@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="NewsTableCell" rowHeight="120" id="KGk-i7-Jjw" customClass="NewsTableCell" customModule="Baghdad_Link" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="98"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="97.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tLf-nw-gy7">
+                        <rect key="frame" x="16" y="11" width="288" height="76"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="GUc-qJ-7zn">
+                                <rect key="frame" x="71" y="8" width="209" height="60"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="الاعلان عن تطبيق رابط بغداد" textAlignment="right" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cMv-xS-wQ3">
+                                        <rect key="frame" x="0.0" y="0.0" width="209" height="31"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="31" id="623-8L-qg1"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="13"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="20-May-2018" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Pw5-mT-tSz">
+                                        <rect key="frame" x="0.0" y="39" width="209" height="21"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="21" id="i5b-11-Ip2"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="10"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="news" translatesAutoresizingMaskIntoConstraints="NO" id="lne-i3-Nr1">
+                                <rect key="frame" x="8" y="15" width="44" height="46"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="46" id="Cdh-SG-0o1"/>
+                                    <constraint firstAttribute="width" constant="44" id="iid-xX-7ZA"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.2196078431372549" green="0.2196078431372549" blue="0.2196078431372549" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="lne-i3-Nr1" firstAttribute="top" secondItem="tLf-nw-gy7" secondAttribute="top" constant="15" id="Czv-Va-fY0"/>
+                            <constraint firstAttribute="trailing" secondItem="GUc-qJ-7zn" secondAttribute="trailing" constant="8" id="RT3-fk-8WX"/>
+                            <constraint firstAttribute="bottom" secondItem="GUc-qJ-7zn" secondAttribute="bottom" constant="8" id="bbv-dV-413"/>
+                            <constraint firstAttribute="bottom" secondItem="lne-i3-Nr1" secondAttribute="bottom" constant="15" id="e7e-RR-yHM"/>
+                            <constraint firstItem="lne-i3-Nr1" firstAttribute="leading" secondItem="tLf-nw-gy7" secondAttribute="leading" constant="8" id="fQd-bq-4cY"/>
+                            <constraint firstItem="GUc-qJ-7zn" firstAttribute="top" secondItem="tLf-nw-gy7" secondAttribute="top" constant="8" id="rpX-P4-kEN"/>
+                            <constraint firstItem="GUc-qJ-7zn" firstAttribute="leading" secondItem="lne-i3-Nr1" secondAttribute="trailing" constant="19" id="wqS-Yf-rvL"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <real key="value" value="15"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="tLf-nw-gy7" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" id="IVp-Gc-w9s"/>
+                    <constraint firstItem="tLf-nw-gy7" firstAttribute="bottom" secondItem="H2p-sc-9uM" secondAttribute="bottomMargin" id="gDo-5b-shE"/>
+                    <constraint firstItem="tLf-nw-gy7" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" id="p1p-f2-Ci2"/>
+                    <constraint firstItem="tLf-nw-gy7" firstAttribute="trailing" secondItem="H2p-sc-9uM" secondAttribute="trailingMargin" id="tAa-be-BLB"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" red="0.19215686269999999" green="0.18823529410000001" blue="0.18823529410000001" alpha="1" colorSpace="calibratedRGB"/>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="DatetimeLbl" destination="Pw5-mT-tSz" id="rXN-UX-NO3"/>
+                <outlet property="TitleLbl" destination="cMv-xS-wQ3" id="gKx-g2-a8z"/>
+            </connections>
+            <point key="canvasLocation" x="25" y="79"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="news" width="512" height="512"/>
+    </resources>
+</document>
